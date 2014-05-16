@@ -1,0 +1,2 @@
+# m h  dom mon dow   command
+0 8 * * * /usr/bin/nmap -sn -v -PS22,80 -oG /data/ipmonitor/data/iplist.gnmap -iL /data/ipmonitor/conf/netblocks >> /dev/null 2>&1

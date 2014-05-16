@@ -1,0 +1,4 @@
+# m h  dom mon dow   command
+10 8 * * *   cd /data/ipmonitor && bash -lc ".rgrovel.rb < /data/ipmonitor/data/iplist.gnmap" >> /dev/null 2>&1
+*/10 * * * * cd /data/ipmonitor && bash -lc "./rshow.rb > /data/ipmonitor/data/iplist.txt"
+*/30 * * * * cd /data/ipmonitor && bash -lc "./zones.rb"
